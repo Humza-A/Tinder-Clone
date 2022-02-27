@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- UI for the tinder logo -->
+    <header>
+        <img src="assets/tinder-logo.png" style="max-width:200px;">
+    </header>
+
+    <!-- UI for the profile section -->
+    <div class="container">
+        <div class="profile">
+            <img src="assets/Profiles/harold.jpg">
+            <p class="info"> <span class="name">Harold</span>, <span class="age">55</span></p>
+            <p class="occupation">Graphics Designer</p>
+        </div>
+        <!-- UI for the circular menu buttons -->
+        <div class="menu">
+            <div class="menu-option">
+                <img src="assets/boost.png" id="btn-boost"/>
+            </div>
+            <div class="menu-option" id="btn-rewind">
+                <img src="assets/rewind.png"/>
+            </div>
+            <div class="menu-option">
+                <img src="assets/nope.png" id="btn-nope"/>
+            </div>            
+            <div class="menu-option" id="btn-like">
+                <img src="assets/like.png"/>
+            </div>                        
+            <div class="menu-option">
+                <img src="assets/super-like.png" id="btn-superlike"/>
+            </div>
+        </div>
+        <div class="menu">
+            <div>
+               <p>Boost</p>
+            </div>
+            <div >
+                <p>Rewind</p>
+            </div>
+            <div>
+                <p>Nope (Dislike)</p>
+            </div>            
+            <div>
+                <p>Like</p>
+            </div>                        
+            <div>
+                <p>Superlike</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- UI for the premium popup -->
+    <div id="premium" class="hidden">
+        <img src="assets/tinder-gold.png"/>
+        <p>This is a premium feature.</p>
+        <p> <a href="#">Signup to unlock our most exclusive features.</a></p>
+    </div>
+
+    <!-- UI for the error message when there are no more people to display. -->
+    <div id="error" class="hidden">
+        <img src="assets/tinder-error.png"/>
+        <p>Sorry, there's no one left!</p> 
+        <p>Maybe you should try again?</p> 
+        <a href="/">Reset Tinder</a>       
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
